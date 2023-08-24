@@ -6,7 +6,10 @@ import java.util.List;
 public class Observer {
 
     public static void main(String[] args) {
+        ConcreteObservable observable = new ConcreteObservable();
 
+        ConcreteObserver observer = new ConcreteObserver(observable);
+        observable.add(observer);
     }
 
 }
